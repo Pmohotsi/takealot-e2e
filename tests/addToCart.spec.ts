@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto(BASE_URL);
 });
 
-test('Add product to cart', async ({ page }) => {
+test('[TC-01] Add product to cart', async ({ page }) => {
   const homePage = new HomePage(page);
   const searchResultsPage = new SearchResultsPage(page);
   const productPage = new ProductPage(page);

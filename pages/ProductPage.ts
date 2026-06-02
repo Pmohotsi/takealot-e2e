@@ -7,5 +7,6 @@ export class ProductPage {
     const productContainer = this.page.getByLabel(productLabel);
     const addToCartButton = productContainer.getByRole('button', { name: 'Add to Cart' });
     await addToCartButton.click();
+  
   }
 }
